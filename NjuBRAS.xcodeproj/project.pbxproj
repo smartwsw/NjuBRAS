@@ -45,7 +45,7 @@
 
 /* Begin PBXFileReference section */
 		3257CB1E1CC6307400B6CCF4 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		3257CB2E1CC632CB00B6CCF4 /* Vibrate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Vibrate.entitlements; sourceTree = "<group>"; };
+		3257CB2E1CC632CB00B6CCF4 /* NjuBRAS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NjuBRAS.entitlements; sourceTree = "<group>"; };
 		3257CB331CC633A700B6CCF4 /* NjuBRAS.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NjuBRAS.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		3257CB361CC633A700B6CCF4 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		3257CB391CC633A700B6CCF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 				3257CB3B1CC633A700B6CCF4 /* Info.plist */,
 			);
 			name = NjuBRASExtend;
-			path = VibrateExtened;
+			path = NjuBRASExtened;
 			sourceTree = "<group>";
 		};
 		32BDCEBB1CC61F1700BAB3BB = {
@@ -121,7 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				3273FF9D1CC8833700C1A6B0 /* SwiftyJSON.swift */,
-				3257CB2E1CC632CB00B6CCF4 /* Vibrate.entitlements */,
+				3257CB2E1CC632CB00B6CCF4 /* NjuBRAS.entitlements */,
 				32BDCEC71CC61F1700BAB3BB /* AppDelegate.swift */,
 				32BDCEC91CC61F1700BAB3BB /* ViewController.swift */,
 				32BDCECB1CC61F1700BAB3BB /* Main.storyboard */,
@@ -129,8 +129,7 @@
 				32BDCED01CC61F1700BAB3BB /* LaunchScreen.storyboard */,
 				32BDCED31CC61F1700BAB3BB /* Info.plist */,
 			);
-			name = NjuBRAS;
-			path = Vibrate;
+			path = NjuBRAS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,7 +297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = VibrateExtened/Info.plist;
+				INFOPLIST_FILE = NjuBRAS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Gang-Jin.NjuBRAS.Extend";
 				PRODUCT_NAME = NjuBRAS;
@@ -310,7 +309,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = VibrateExtened/Info.plist;
+				INFOPLIST_FILE = NjuBRAS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Gang-Jin.NjuBRAS.Extend";
 				PRODUCT_NAME = NjuBRAS;
@@ -406,9 +405,8 @@
 		32BDCED71CC61F1700BAB3BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				INFOPLIST_FILE = Vibrate/Info.plist;
+				INFOPLIST_FILE = NjuBRAS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Gang-Jin.NjuBRAS";
 				PRODUCT_NAME = NjuBRAS;
@@ -418,9 +416,8 @@
 		32BDCED81CC61F1700BAB3BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				INFOPLIST_FILE = Vibrate/Info.plist;
+				INFOPLIST_FILE = NjuBRAS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Gang-Jin.NjuBRAS";
 				PRODUCT_NAME = NjuBRAS;
