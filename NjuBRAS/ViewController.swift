@@ -15,34 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        /*
-        let urlString:String = "http://p.nju.edu.cn/portal_io/getinfo"
-        var url:NSURL!
-        url = NSURL(string: urlString)
-        var request = NSMutableURLRequest(URL:url)
-        var body = ""
-        var postData = body.dataUsingEncoding(NSUTF8StringEncoding)
-        request.HTTPMethod = "POST"
-        request.HTTPBody = postData
-        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
-            guard error == nil && data != nil else {      
-                NSLog("error=\(error)")
-                self.ipString.text = "No Login"
-                self.balanceString.text = "No Login"
-                return
-            }
-            let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding)
-            NSLog("responseString = \(responseString!)")
-            /* Ayalyse Json */
-            if let dataFromString = responseString!.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false) {
-                let json = JSON(data: dataFromString) 
-                let ip = self.IntToIP(json["userinfo"]["useripv4"].int!)
-                self.ipString.text = "\(ip)"
-                self.balanceString.text = "\(json["userinfo"]["balance"].double! / 100)"
-            }
-        }
-        task.resume()   
- */
+       
     }
     @IBOutlet weak var userString: UITextField!
     
@@ -87,9 +60,9 @@ class ViewController: UIViewController {
         let urlString:String = "http://p.nju.edu.cn/portal_io/login"
         var url:NSURL!
         url = NSURL(string: urlString)
-        var request = NSMutableURLRequest(URL:url)
-        var body = "username=\(self.userString.text!)&password=\(self.passwdString.text!)"
-        var postData = body.dataUsingEncoding(NSUTF8StringEncoding)
+        let request = NSMutableURLRequest(URL:url)
+        let body = "username=\(self.userString.text!)&password=\(self.passwdString.text!)"
+        let postData = body.dataUsingEncoding(NSUTF8StringEncoding)
         request.HTTPMethod = "POST"
         request.HTTPBody = postData
         let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
@@ -135,9 +108,9 @@ class ViewController: UIViewController {
         let urlString:String = "http://p.nju.edu.cn/portal_io/logout"
         var url:NSURL!
         url = NSURL(string: urlString)
-        var request = NSMutableURLRequest(URL:url)
-        var body = ""
-        var postData = body.dataUsingEncoding(NSUTF8StringEncoding)
+        let request = NSMutableURLRequest(URL:url)
+        let body = ""
+        let postData = body.dataUsingEncoding(NSUTF8StringEncoding)
         request.HTTPMethod = "POST"
         request.HTTPBody = postData
         let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in

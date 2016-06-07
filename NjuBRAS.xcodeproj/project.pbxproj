@@ -17,6 +17,7 @@
 		32BDCECD1CC61F1700BAB3BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32BDCECB1CC61F1700BAB3BB /* Main.storyboard */; };
 		32BDCECF1CC61F1700BAB3BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32BDCECE1CC61F1700BAB3BB /* Assets.xcassets */; };
 		32BDCED21CC61F1700BAB3BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32BDCED01CC61F1700BAB3BB /* LaunchScreen.storyboard */; };
+		32DB056A1D05566600A0A275 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB05691D05566600A0A275 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		32BDCECE1CC61F1700BAB3BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32BDCED11CC61F1700BAB3BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32BDCED31CC61F1700BAB3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32DB05691D05566600A0A275 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				3257CB361CC633A700B6CCF4 /* TodayViewController.swift */,
 				3257CB381CC633A700B6CCF4 /* MainInterface.storyboard */,
+				32DB05691D05566600A0A275 /* SwiftyJSON.swift */,
 				3257CB3B1CC633A700B6CCF4 /* Info.plist */,
 			);
 			name = NjuBRASExtend;
@@ -242,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3257CB371CC633A700B6CCF4 /* TodayViewController.swift in Sources */,
+				32DB056A1D05566600A0A275 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = NjuBRAS/Info.plist;
+				INFOPLIST_FILE = NjuBRASExtened/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Gang-Jin.NjuBRAS.Extend";
 				PRODUCT_NAME = NjuBRAS;
@@ -309,7 +313,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = NjuBRAS/Info.plist;
+				INFOPLIST_FILE = NjuBRASExtened/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Gang-Jin.NjuBRAS.Extend";
 				PRODUCT_NAME = NjuBRAS;

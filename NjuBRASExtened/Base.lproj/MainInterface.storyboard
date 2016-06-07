@@ -17,18 +17,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAo-bw-kNO">
-                                <rect key="frame" x="137" y="4" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAo-bw-kNO">
+                                <rect key="frame" x="254" y="4" width="46" height="30"/>
                                 <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="tapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="6Nj-jZ-Vd7"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4t-Kp-maC">
+                                <rect key="frame" x="20" y="8" width="231" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.69120173429319376" green="0.69120173429319376" blue="0.69120173429319376" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="IAo-bw-kNO" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="0mD-OB-vga"/>
-                            <constraint firstItem="IAo-bw-kNO" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="lYz-CD-NL5"/>
+                            <constraint firstItem="IAo-bw-kNO" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="5OD-qk-Kxp"/>
+                            <constraint firstItem="IAo-bw-kNO" firstAttribute="leading" secondItem="j4t-Kp-maC" secondAttribute="trailing" constant="192" id="d6z-gD-ZH6"/>
+                            <constraint firstItem="j4t-Kp-maC" firstAttribute="centerY" secondItem="IAo-bw-kNO" secondAttribute="centerY" id="f9J-9Z-ceE"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -37,10 +44,13 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="37"/>
+                    <connections>
+                        <outlet property="label" destination="j4t-Kp-maC" id="ZfS-pO-T7o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="516" y="285"/>
+            <point key="canvasLocation" x="516" y="284.5"/>
         </scene>
     </scenes>
 </document>
