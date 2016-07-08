@@ -1,5 +1,5 @@
 # NjuBRAS
-----------
+
 This is a course project of Mobile Internet Technology(2016 Spring). 
 
 ##Main function
